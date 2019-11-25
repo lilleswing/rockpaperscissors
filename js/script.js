@@ -52,6 +52,7 @@ $("button").click(function() {
   playerMove = playerMove.toLowerCase();
   if (!VALID_MOVES.includes(playerMove)) {
     alert(playerMove + " is not a valid action");
+    return;
   }
   computerMove = getComputerMove();
   updateChoices(playerMove, computerMove);
